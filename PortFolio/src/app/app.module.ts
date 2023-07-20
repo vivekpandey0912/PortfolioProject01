@@ -9,6 +9,12 @@ import { MySkillsComponent } from './components/my-skills/my-skills.component';
 import { WorkedComponent } from './components/worked/worked.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
+import { HomepageComponent } from './homepage/homepage.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -17,12 +23,18 @@ import { HomeComponent } from './components/home/home.component';
     MySkillsComponent,
     WorkedComponent,
     ContactComponent,
-    HomeComponent
+    HomeComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
