@@ -9,13 +9,14 @@ import { MySkillsComponent } from './components/my-skills/my-skills.component';
 import { WorkedComponent } from './components/worked/worked.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeComponent } from './components/home/home.component';
-import { HomepageComponent } from './homepage/homepage.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { ProjectsComponent } from './components/projects/projects.component';
+import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { HomepageComponent } from './components/homepage/homepage.component';
 
 
 
@@ -27,8 +28,9 @@ import { ProjectsComponent } from './components/projects/projects.component';
     WorkedComponent,
     ContactComponent,
     HomeComponent,
-    HomepageComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    SidenavComponent,
+    HomepageComponent
   ],
   imports: [
     BrowserModule,
