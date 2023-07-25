@@ -1,0 +1,56 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav style="background-color: black" #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar class="mt-4">
+      <div class="container">
+
+    
+
+              <h2>Vivek Coder</h2>
+
+
+      </div>
+
+
+
+    </mat-toolbar>
+    <mat-nav-list class="white-color">
+      <div  class="container mt-4"><a routerLink="" class="white-color" fragment="Home">Home</a></div>
+      <div   class="container mt-4"><a routerLink="" class="white-color" fragment="About">About</a></div>
+      <div class="container  mt-4"><a routerLink="" class="white-color" fragment="Contact">Contact</a></div>
+      <div class="container  mt-4"  ><a routerLink="" class="white-color" fragment="Skill">Skill</a></div>
+      <div routerLink="project" class="container mt-4"><a routerLink = "" class="white-color" fragment="Project">
+        Projects</a></div>
+        <div class="container  mt-4"><a routerLink="" class="white-color" fragment="Worked">Work Exprience</a></div>
+
+  
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar style="background-color: black; color: white;">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>PortFolio</span>
+    </mat-toolbar>
+    <div class="container">
+
+      <div class="container width"> <app-home id="Home"></app-home></div>
+      <div class="container width"><app-about id="About"></app-about></div>
+      <div class="container width"><app-contact id="Contact"></app-contact></div>
+    <div class="container width"><app-my-skills id="Skill"></app-my-skills></div>
+    <div class="container width"> <app-projects id="Project"></app-projects></div>
+    <div class="container width"> <app-worked id="Worked"></app-worked></div>
+  </div>
+    
+  
+  
+  </mat-sidenav-content>
+</mat-sidenav-container>
