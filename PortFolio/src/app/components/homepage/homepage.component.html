@@ -4,14 +4,14 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
     <mat-toolbar class="mt-4">
-      <div class="container">
+      <!-- <div class="container">
 
     
 
               <h2>Vivek Coder</h2>
 
 
-      </div>
+      </div> -->
 
 
 
@@ -29,7 +29,7 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar style="background-color: black; color: white;">
+    <mat-toolbar style="background-color: black; color: white; position: fixed;">
       <button
         type="button"
         aria-label="Toggle sidenav"
@@ -38,7 +38,7 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>PortFolio</span>
+      <span>PortFolio !!</span>
     </mat-toolbar>
     <div class="container">
 

@@ -1,9 +1,104 @@
-.example-spacer {
-    flex: 1 1 auto;
+/* src/styles.css */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 10px;
   }
-  .example-container {
-    width: 400px;
-    height: 200px;
-    margin: 10px;
-    border: 1px solid #555;
+  
+  .sidebar {
+    background-color: #eee;
+    width: 200px;
+    height: 100%;
+    padding: 10px;
   }
+  
+  .navbar-nav, .sidebar-nav {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .nav-item, .sidebar-item {
+    padding: 5px 10px;
+  }
+  
+  .nav-item a, .sidebar-item a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .nav-item a:hover, .sidebar-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .active {
+    background-color: #555;
+  }
+  /* Add some spacing and padding to improve the layout */
+.container {
+  margin-top: 20px;
+}
+
+.col-md-6 {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: 300px;
+}
+.heading
+{
+  font-family: 'Merriweather', serif;
+  font-size: 50px;
+  
+}
+.para
+{
+   font-family: 'Merriweather', serif;
+   font-weight: bold;
+   font-size: 40px;
+   margin-top: 30px;
+}
+.content1
+{
+  display: flex;
+  justify-content: center;
+  
+  width: 100%;
+}
+.margin
+{
+  padding-top: 200px;
+}
+.para1
+{
+  font-family: 'Merriweather', serif;
+  font-weight: bold;
+  font-size: 25px;
+
+  display: inline-block;
+}
+.para2
+{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+}
+.img-with-spacing {
+  padding-right: 20px;
+}
+.para0
+{
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+/* Add margin between the circular image and the content */
+.col-md-5.ps-4 {
+  margin-top: 20px;
+}
