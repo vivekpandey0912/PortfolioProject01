@@ -99,3 +99,9 @@ font-style: italic;
 .col-md-5.ps-4 {
   margin-top: 20px;
 }
+.bold
+{
+    font-weight: 100;
+    display: block;
+
+}
